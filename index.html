@@ -10,6 +10,71 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+
+    <!-- Custom Styles for Responsive Design -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .header-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .header-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 20px;
+        }
+        .about-caption {
+            max-width: 800px;
+            text-align: justify;
+        }
+        .btn-rounded {
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-rounded:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .header-title {
+                font-size: 3.5rem;
+            }
+            .header-subtitle {
+                font-size: 1.5rem;
+            }
+            .about {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .about-img-holder {
+                flex: 1;
+                margin-right: 20px;
+            }
+            .about-caption {
+                flex: 2;
+            }
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -42,7 +107,6 @@
                 <li class="item">
                     <a class="link" href="#leadership-volunteering">Leadership Experience</a>
                 </li>
-            
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -68,10 +132,34 @@
             <p class="header-subtitle"> </p> 
             <p class="header-subtitle" style="margin-bottom: 40px;"></p>
             <p class="header-subtitle bold-dark-text">Seeking Operations/Supply Chain/Project Management Co-op/Full Time Roles</p>
-
-            
         </div>              
     </header><!-- end of page header -->
+
+    <!-- About Section -->
+    <section class="section pt-0" id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/1234.jpeg" class="about-img" alt="Profile Image">
+                </div>
+                <div class="about-caption">
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p class="about-text">
+                        I am an Industrial Engineering professional with hands-on experience in supply chain optimization, operations management, and project coordination. Currently pursuing a Master’s in Engineering Management at USC, I specialize in leveraging data-driven insights to enhance operational efficiency and drive continuous improvement.
+                    </p>
+                    <p class="about-text">
+                        In my current role as an Industrial Engineering Intern at North Bay Distribution Inc, I have led impactful projects such as reorganizing inventory management for New York Transit, conducting warehouse layout analyses, and enhancing data-driven decision-making through advanced analytics. My hands-on experience includes optimizing order fulfillment processes, reducing waste, and implementing labor planning strategies that have yielded substantial cost savings. My previous experience at USC Bookstore Distribution Centre and Maruti Seals Pvt. Ltd. has further strengthened my skills in logistics, production efficiency, and project execution.
+                    </p>
+                    <p class="about-text">
+                        With a Bachelor’s degree in Mechanical Engineering from the University of Mumbai and coursework in Project Management, Logistics, and Optimization Techniques, I bring a robust technical background and a passion for problem-solving to every project I undertake. My goal is to continue growing in the fields of Industrial Engineering, Supply Chain Management, Operations Management, and Project Management, contributing to innovative solutions and impactful improvements in organizational performance.
+                    </p>
+                    <a href="assets/js/Resume_Shivam_Salunke.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">
+                        View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -92,34 +180,6 @@
 </body>
 </html>
 
-
-   <!-- About Section -->
-<section class="section pt-0" id="about">
-    <!-- Container -->
-    <div class="container text-center">
-        <!-- About Wrapper -->
-        <div class="about">
-            <div class="about-img-holder">
-                <img src="assets/imgs/1234.jpeg" class="about-img" alt="Profile Image">
-            </div>
-            <div class="about-caption">
-                <h2 class="section-title mb-3">About Me</h2>
-                <p class="about-text">
-                    I am an Industrial Engineering professional with hands-on experience in supply chain optimization, operations management, and project coordination. Currently pursuing a Master’s in Engineering Management at USC, I specialize in leveraging data-driven insights to enhance operational efficiency and drive continuous improvement.
-                </p>
-                <p class="about-text">
-                    In my current role as an Industrial Engineering Intern at North Bay Distribution Inc, I have led impactful projects such as reorganizing inventory management for New York Transit, conducting warehouse layout analyses, and enhancing data-driven decision-making through advanced analytics. My hands-on experience includes optimizing order fulfillment processes, reducing waste, and implementing labor planning strategies that have yielded substantial cost savings. My previous experience at USC Bookstore Distribution Centre and Maruti Seals Pvt. Ltd. has further strengthened my skills in logistics, production efficiency, and project execution.
-                </p>
-                <p class="about-text">
-                    With a Bachelor’s degree in Mechanical Engineering from the University of Mumbai and coursework in Project Management, Logistics, and Optimization Techniques, I bring a robust technical background and a passion for problem-solving to every project I undertake. My goal is to continue growing in the fields of Industrial Engineering, Supply Chain Management, Operations Management, and Project Management, contributing to innovative solutions and impactful improvements in organizational performance.
-                </p>
-                <a href="assets/js/Shivam_Salunke.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">
-                    View Resume
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
 
                 
