@@ -26,8 +26,9 @@
             min-height: 100vh;
         }
         .header-title {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Default size */
             margin-bottom: 1rem;
+            white-space: nowrap;
         }
         .header-subtitle {
             font-size: 1.2rem;
@@ -35,13 +36,18 @@
         }
         .about {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
             margin-top: 50px;
             margin-bottom: 50px;
             padding: 20px;
         }
+        .about-img-holder {
+            flex: 1;
+            margin-right: 20px;
+        }
         .about-caption {
+            flex: 2;
             max-width: 800px;
             text-align: justify;
         }
@@ -57,21 +63,30 @@
         /* Responsive Design */
         @media (min-width: 768px) {
             .header-title {
-                font-size: 3.5rem;
+                font-size: 2.5rem;
             }
             .header-subtitle {
                 font-size: 1.5rem;
             }
-            .about {
-                flex-direction: row;
-                justify-content: space-between;
+        }
+        @media (min-width: 1024px) {
+            .header-title {
+                font-size: 3rem;
             }
-            .about-img-holder {
-                flex: 1;
-                margin-right: 20px;
+        }
+        @media (min-width: 1440px) {
+            .header-title {
+                font-size: 3.5rem;
             }
-            .about-caption {
-                flex: 2;
+        }
+        @media (min-width: 1920px) {
+            .header-title {
+                font-size: 4rem;
+            }
+        }
+        @media (min-width: 2560px) {
+            .header-title {
+                font-size: 4.5rem;
             }
         }
     </style>
@@ -122,7 +137,7 @@
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
-                <span class="down">I am Shivam Salunke</span>
+                <span class="down">I am Shivam Salunke!</span>
             </h1>
             <p class="header-subtitle"> </p>
             <p class="header-subtitle plain-black">Mechanical Engineer</p> 
@@ -137,7 +152,7 @@
 
     <!-- About Section -->
     <section class="section pt-0" id="about">
-        <div class="container text-center">
+        <div class="container">
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/1234.jpeg" class="about-img" alt="Profile Image">
@@ -180,16 +195,6 @@
 </body>
 </html>
 
-
-
-                
-            
-
-<style>
-    .about-text {
-        text-align: justify;
-    }
-</style>
 
 
 
